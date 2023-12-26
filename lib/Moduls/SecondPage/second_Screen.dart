@@ -15,6 +15,26 @@ class _Second_ScrrenState extends State<Second_Scrren> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Detail Page"),
+        centerTitle: true,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Type: ${data['type']}",
+                style: TextStyle(fontSize: 20),
+              ),
+              Text("Synopsis: ${data['synopsis']}"),
+              SizedBox(
+                height: 20,
+              ),
+              Text("Background: ${data['background']}"),
+            ],
+          ),
+        ),
       ),
     );
   }

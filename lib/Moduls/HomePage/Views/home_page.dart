@@ -25,9 +25,7 @@ class _Home_PageState extends State<Home_Page> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Api Calling"),
-        foregroundColor: Colors.white,
         centerTitle: true,
-        backgroundColor: Colors.red,
       ),
       body: FutureBuilder(
         future: getApi,
